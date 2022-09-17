@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Ping coming soon page</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/index.js" defer></script>
+  </head>
+  <body>
+    <section class="container">
+      <img src="images\logo.svg" alt="logo" class="logo" />
+      <h1>We are launching <span>soon!</span></h1>
+      <h3>Subscribe and get notified</h3>
+      <form class="inputContainer">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="inputEmail"
+          value="Your email address..."
+          onfocus="this.value=''"
+          required="required"
+        />
+        <input type="submit" class="inputButton" value="Notify Me" id="submitButton"></input>
+      </form>
+      <img
+        src="images\illustration-dashboard.png"
+        alt="stats dashboard"
+        class="dashboard"
+      />
+    </section>
+    <footer>
+      <div class="socialContainer">
+        <div class="socialItem">
+          <a href="https://facebook.com/" title="" target="_blank"
+            ><img
+              src="images/facebook.png"
+              alt="facebook logo"
+              class="socialLogoImg"
+          /></a>
+        </div>
+        <div class="socialItem">
+          <a href="https://twitter.com/" title="" target="_blank"
+            ><img
+              src="images/twitter.png"
+              alt="twitter logo"
+              class="socialLogoImg"
+          /></a>
+        </div>
+        <div class="socialItem">
+          <a href="https://instagram.com/" title="" target="_blank"
+            ><img
+              src="images/instagram.png"
+              alt="instagram logo"
+              class="socialLogoImg"
+          /></a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; Copyright Ping. All rights reserved.</p>
+      </div>
+      <p class="attribution">
+        <a
+          href="https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da/"
+          target="_blank"
+        >
+          Challenge</a
+        >
+        by Frontend Mentor. Coded by
+        <a href="https://github.com/marcusvcalves/" target="_blank"
+          >Marcus Vinícius</a
+        >.
+      </p>
+    </footer>
+  </body>
+</html>

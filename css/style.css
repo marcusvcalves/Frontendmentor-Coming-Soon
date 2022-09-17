@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+*{
+    font-family: 'Libre Franklin', sans-serif;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    width:7.5vw;
+    height:5vh;
+}
+.inputContainer{
+    display:flex;
+    flex-direction: row;
+    gap:1rem;
+
+}
+.inputEmail{
+    text-align: center;
+    color:hsl(0, 0%, 59%);
+    width:500px;
+    height:50px;
+    border-radius: 30px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    border:solid 1px hsl(223, 100%, 88%);
+}
+.inputButton{
+    background-color: hsl(223, 87%, 63%);
+    color:white;
+    width: 60%;
+    height: 50px;
+    margin: 0 auto;
+    border:solid 1px #ccc;
+    border-radius: 30px;
+    font-size: 1.1em;
+}
+.dashboard{
+    margin-top:10%;
+    width:50%;
+    height:auto;
+}
+.socialContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:10%;
+    gap:1rem;
+}
+.socialLogoImg{
+    width:25px;
+    height:25px;
+}
+.copyright{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
