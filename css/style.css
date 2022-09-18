@@ -5,13 +5,11 @@
 h1{
     font-size: 2.5em;
     color:hsl(0, 0%, 59%);
-    font-weight: 400;
-    
+    font-weight: 400; 
 }
 .spanH1{
     color:hsl(209, 33%, 12%);
     font-weight: 700;
-
 }
 .container{
     display:flex;
@@ -80,12 +78,18 @@ h1{
 
 @media (max-width: 575px)
 {
+    h1{
+        text-align: center; 
+    }
     .inputContainer{
         flex-direction: column;
         
     }
+    .inputEmail{
+        width:60vw;
+    }
     .inputButton{
-        width:40vw;
+        width:60vw;
     }
     .logo{width:15vw;}
 }
