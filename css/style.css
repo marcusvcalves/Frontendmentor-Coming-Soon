@@ -2,6 +2,17 @@
 *{
     font-family: 'Libre Franklin', sans-serif;
 }
+h1{
+    font-size: 2.5em;
+    color:hsl(0, 0%, 59%);
+    font-weight: 400;
+    
+}
+.spanH1{
+    color:hsl(209, 33%, 12%);
+    font-weight: 700;
+
+}
 .container{
     display:flex;
     flex-direction: column;
@@ -20,7 +31,7 @@
 .inputEmail{
     text-align: center;
     color:hsl(0, 0%, 59%);
-    width:500px;
+    width:40vw;
     height:50px;
     border-radius: 30px;
     margin: 0 auto;
@@ -33,7 +44,7 @@
 .inputButton{
     background-color: hsl(223, 87%, 63%);
     color:white;
-    width: 60%;
+    width: 12.5vw;
     height: 50px;
     margin: 0 auto;
     border:solid 1px #ccc;
@@ -47,8 +58,8 @@
 .invalidInputBorder{    border:solid 1px red;}
 .dashboard{
     margin-top:10%;
-    width:50%;
-    height:auto;
+    width:70%;
+    height:100%;
 }
 .socialContainer{
     display:flex;
@@ -62,12 +73,21 @@
     height:25px;
 }
 .copyright{
+    font-size:0.7em;
     text-align: center;
+    color: hsl(0, 0%, 59%)
 }
 
-
-
-
+@media (max-width: 375px)
+{
+    .inputContainer{
+        flex-direction: column;
+        
+    }
+    .inputButton{
+        width:40vw;
+    }
+}
 
 
 

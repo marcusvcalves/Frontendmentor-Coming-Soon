@@ -16,18 +16,21 @@
   <body>
     <section class="container">
       <img src="images\logo.svg" alt="logo" class="logo" />
-      <h1>We are launching <span>soon!</span></h1>
+      <h1>We are launching <span class="spanH1">soon!</span></h1>
       <h3>Subscribe and get notified</h3>
-      <form class="inputContainer">
-        <input
-          type="email"
-          id="email"
-          name="email"
-          class="inputEmail"
-          value="Your email address..."
-          onfocus="this.value=''"
-        />
-        <input type="submit" class="inputButton" value="Notify Me" id="submitButton"></input>
+      <form id="form" action="/" method="GET" class="inputContainer" id="form">
+        <div>
+          <input
+            id="emailInput"
+            class="inputEmail"
+            name="email"
+            type="email"
+            placeholder="Your email address..."
+          />
+        </div>
+        <button type="submit" id="submitButton" class="inputButton">
+          Notify Me
+        </button>
       </form>
       <p id="invalidInput"></p>
       <img

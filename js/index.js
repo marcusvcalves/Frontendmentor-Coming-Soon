@@ -1,13 +1,15 @@
-let submitButton = document.getElementById("submitButton");
-let email = document.getElementById("email");
+const email = document.getElementById("emailInput");
+const form = document.getElementById("form");
+const invalidInput = document.getElementById("invalidInput");
 
-submitButton.addEventListener("click", function () {
-  let inpObj = document.getElementById("email");
-  if (!inpObj.checkValidity()) {
-    document.getElementById("invalidInput").innerHTML =
-      "Please provide a valid email address";
-    email.classList.add("invalidInputBorder");
-  } else {
-    email.classList.remove("invalidInputBorder");
+form.addEventListener("submit", (e) => {
+  let messages = [];
+
+  if (email.value === "" || email.value == null) {
+    messages.push("Please provide a valid email address");
+  }
+  if (messages.length > 0) {
+    e.preventDefault();
+    invalidInput.innerText = messages.join(", ");
   }
 });
