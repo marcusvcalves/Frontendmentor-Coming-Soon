@@ -78,7 +78,7 @@ h1{
     color: hsl(0, 0%, 59%)
 }
 
-@media (max-width: 375px)
+@media (max-width: 575px)
 {
     .inputContainer{
         flex-direction: column;
@@ -87,6 +87,7 @@ h1{
     .inputButton{
         width:40vw;
     }
+    .logo{width:15vw;}
 }
 
 
